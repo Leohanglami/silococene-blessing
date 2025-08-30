@@ -1,0 +1,7 @@
+# Netlify build settings for a subfolder (frontend) + serverless functions.
+[build]
+  command = "npm --prefix frontend ci && npm --prefix frontend run build"
+  publish = "frontend/dist"
+
+[functions]
+  directory = "netlify/functions"
